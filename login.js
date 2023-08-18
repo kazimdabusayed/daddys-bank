@@ -7,7 +7,10 @@ document.getElementById("btn-submit").addEventListener('click', function(){
     console.log(email, password);
 
     //Do not verify password on the client side
-    if (email === '') {
-        
+    if (email === 'arafat@gmail.com' && password === 'I am Arafat') {
+        window.location.href = "bank.html";
+    }
+    else{
+        alert("Please give valid UserName and Password")
     }
 })
